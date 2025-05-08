@@ -1,0 +1,35 @@
+
+h1{
+    color: #e0ffff;
+    text-shadow: 4px 7px #556b2f;
+    background-color: #c783c4;
+
+}
+h2{
+    color: #5f9ea0;
+}
+div.zentai{
+    margin: 10px 15px;
+    display: grid;
+   
+    background-color:#debdcf
+    
+    
+}
+h3{
+    margin: 5px 15px;
+    color: #6a5acd;
+    background-color: #e0ffff;
+}    
+    div.zentai{
+    p.kansou{
+        color: rgb(66, 28, 116);
+    }
+    p.tag{
+        color:#556b2f;
+    }
+    }  
+}
+
+
+
