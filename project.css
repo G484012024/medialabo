@@ -1,0 +1,12 @@
+p{
+    color: rgb(30, 30, 31);
+    margin: 5px;
+    text-shadow: 4px 4px 4px #556b2f;
+  
+    border-top: 5px blanchedalmond;
+}
+ul{
+    margin: 5px;
+    color: #bbce5f;
+    background-color: darkslategray;
+}

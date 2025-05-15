@@ -5,6 +5,7 @@ h1{
     background-color: #c783c4;
 
 }
+
 h2{
     color: #5f9ea0;
 }
@@ -12,9 +13,13 @@ div.zentai{
     margin: 10px 15px;
     display: grid;
    
-    background-color:#debdcf
-    
-    
+    background-color:#debdcf   
+}
+div.so{
+    margin: 10px 15px;
+    display: grid;
+   
+    background-color:#6bd5b9
 }
 h3{
     margin: 5px 15px;
@@ -29,7 +34,7 @@ h3{
         color:#556b2f;
     }
     }  
-}
+
 
 
 
