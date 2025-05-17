@@ -10,10 +10,23 @@ function print(data) {
     console.log('風速'+data.wind.speed);
     console.log('風向'+data.wind.deg);
     console.log('都市名'+data.name);
-
-
 }
 
+document.addEventListener('DOMContentLoaded', function () { 
+// HTMLが全部読み込まれてから処理を始めるーっていう命令
+  const button = document.getElementById('search');    
+//constは変数を作るintみたなものでこの変数は後から値を変えねいよって意味.もし変数の値を後から変えたいなら、letを使うと良い
+//buttonにdocument.getElementById('search'); を入れると、HTMLから指定したID(ここでは'search')を探してくる。
+    button.addEventListener('click', function () {              
+//ボタンがクリックされたときにこの中の処理をしてねという命令          
+    const input = document.getElementById('city-id'); 
+//都市のIDを入れる入れ物(ここでは'city-id')をHTMLから探してくる
+    const cityId = input.value; //.valueはinputタグ入力された値を取り出す名前。プロパティ。
+//ユーザが入力した値を取り出してcityidに入れる
+    console.log('入力された都市ID:', cityId); 
+//入力された値をコンソールに表示する。コンソールに表示することでデバックのためになる
+  });
+});
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
