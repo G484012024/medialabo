@@ -12,24 +12,24 @@ function print(data) {
     console.log('都市名'+data.name);
 }
 
-document.addEventListener('DOMContentLoaded', function () { 
-// HTMLが全部読み込まれてから処理を始めるーっていう命令
-  const button = document.getElementById('search');    
-//constは変数を作るintみたなものでこの変数は後から値を変えねいよって意味.もし変数の値を後から変えたいなら、letを使うと良い
-//buttonにdocument.getElementById('search'); を入れると、HTMLから指定したID(ここでは'search')を探してくる。
-    button.addEventListener('click', function () {              
-//ボタンがクリックされたときにこの中の処理をしてねという命令          
-    const input = document.getElementById('city-id'); 
-//都市のIDを入れる入れ物(ここでは'city-id')をHTMLから探してくる
-    const cityId = input.value; //.valueはinputタグ入力された値を取り出す名前。プロパティ。
-//ユーザが入力した値を取り出してcityidに入れる
-    console.log('入力された都市ID:', cityId); 
-//入力された値をコンソールに表示する。コンソールに表示することでデバックのためになる
-  });
-});
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
-
+const result = document.createElement('div');
+result.setAttribute('id','result');
+result.innerHTML = `
+    <ul>
+      <li>経度: ${data.coord.lon}</li>
+      <li>緯度: ${data.coord.lat}</li>
+      <li>天気: ${data.weather[0].description}</li>
+      <li>最低気温: ${data.main.temp_min} ℃</li>
+      <li>最高気温: ${data.main.temp_max} ℃</li>
+      <li>湿度: ${data.main.humidity} %</li>
+      <li>風速: ${data.wind.speed} m/s</li>
+      <li>風向: ${data.wind.deg} 度</li>
+      <li>都市名: ${data.name}</li>
+    </ul>
+  `;
+  document.body.appendChild(result);
 }
 
 // 課題5-1 のイベントハンドラの定義

@@ -7,4 +7,5 @@ function greeting(){
     aisatu=('こんにちは'+shimei+'さん');
     p =document.querySelector('p#message');
     p.textContent=aisatu;
+    
 }
