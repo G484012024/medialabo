@@ -14,12 +14,15 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
-  const mae = document.querySelector('div#result');
+  const mae = document.querySelector('.result');
   if (mae !== null) {
     mae.remove();
   }//前に検索した内容を削除する
+
 const result = document.createElement('div');
 result.setAttribute('class','result');
+
+
 result.innerHTML = `
     <ul>
       <li>都市名: ${data.name}</li>
@@ -44,9 +47,25 @@ let b = document.querySelector('#search');
   b.addEventListener('click', sendRequest);
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
-function sendRequest() {
-    // 入力欄から都市IDとる
-    let cityId = document.querySelector('#city-id').value;
+const cityName={
+      "Cairo": 360630,
+  "Moscow": 524901,
+  "Johannesburg": 993800,
+  "Beijing": 1816670,
+  "Tokyo": 1850147,
+  "Singapore": 1880252,
+  "Sydney": 2147714,
+  "London": 2643743,
+  "Paris": 2968815,
+  "Rio de Janeiro": 3451189,
+  "New York": 5128581,
+  "Los Angeles": 5368361
+    };
+    function sendRequest() {
+    // 入力欄から都市の名前をとる
+    let inputName = document.querySelector('#city-id').value.trim();
+    let cityId= cityName[inputName];
+    
     let url = `https://www.nishita-lab.org/web-contents/jsons/openweather/${cityId}.json`;
     axios.get(url)
     .then(showResult) 
