@@ -5,9 +5,22 @@ h1{
     background-color: #c783c4;
 
 }
+.box2 {
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 15px;/*角の丸み*/
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
 
 h2{
-    color: #5f9ea0;
+    color: #082628;
 }
 div.zentai{
     margin: 10px 15px;

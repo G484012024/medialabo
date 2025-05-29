@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="weather.js" defer></script>
     <link rel="stylesheet" href="project.css">
  </head> 
- <body> 
-<!--    
-<p>世界の天気（検索結果1件）</p>
+ <body>     
+
 <label for="city-id">都市ID（数値）:</label>
-<input type="number" id="city-id" name="city-id" placeholder="例: 1850147">
+<input type="number" id="city-id" name="city-id" placeholder="下の中の数値入力">
 <button id="search">検索</button>
 <ul>
 <li>360630 ... Cairo カイロ （エジプト）</li>
@@ -23,9 +23,11 @@
 <li>3451189 ... Rio de Janeiro リオデジャネイロ （ブラジル）</li>
 <li>5128581 ... New York ニューヨーク （アメリカ合衆国）</li>
 <li>5368361 ... Los Angeles ロサンゼルス （アメリカ合衆国）</li>
-</ul>--> 
-<div class ="result">
-<ul>
+</ul> 
+<p><検索結果⇩></p>
+<div class ="result"></div>
+<!--
+    <ul>
     <li>経度: 116.3972 </li>
     <li>緯度: 39.9075</li>
     <li>天気: 曇りがち</li>
@@ -36,6 +38,7 @@
     <li>風向: 197</li>
     <li>都市名: 北京市</li>
 </ul>
+-->
 </div>
 </body>
 
