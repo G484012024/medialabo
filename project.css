@@ -1,12 +1,14 @@
+
 p{
-    color: rgb(30, 30, 31);
+    color: rgb(63, 117, 168);
     margin: 5px;
-    text-shadow: 4px 4px 4px #556b2f;
-  
-    border-top: 5px blanchedalmond;
+    text-shadow: 4px 4px 4px #4e6427;
+    border-top: 5px rgb(116, 182, 50);
 }
+
 ul{
     margin: 5px;
-    color: #bbce5f;
+    color: #ffffff;
     background-color: darkslategray;
+    font-family:"Hiragino Sans"
 }
